@@ -38,65 +38,62 @@ int main()
     int regfee;
     int lodgingPerDay;
 
-    if (course_option == 1)
-    {
+    switch(course_option){
+    case 1:
         days_for_course = 3;
         regfee = 10000;
-    }
+         break;
 
-    else if (course_option == 2)
-    {
+   
+    case 2:
         days_for_course = 5;
         regfee = 8000;
-    }
-    else if (course_option == 3)
-    {
+        break;
+    
+    case 3:
         days_for_course = 7;
         regfee = 15000;
-    }
-    else if (course_option == 4)
-    {
+        break;
+    case 4:
         days_for_course = 5;
         regfee = 13000;
-    }
-    else if (course_option == 5)
-    {
+         break;
+
+    case 5:
+    
         days_for_course = 2;
         regfee = 5000;
-    }
+       break;
 
-    else
-    {
+   default:
         cout << "INVALID INPUT" << endl;
+       break;
     }
 
-    if (location_option == 1)
+    switch (location_option)
     {
+        case 1:
         lodgingPerDay = 10000;
-    }
+    break;
 
-    else if (location_option == 2)
-    {
+    case 2:
         lodgingPerDay = 2500;
-    }
-    else if (location_option == 3)
-    {
+        break;
+    case 3:
         lodgingPerDay = 5000;
-    }
-    else if (location_option == 4)
-    {
+        break;
+    case 4:
         lodgingPerDay = 13000;
-    }
-    else if (location_option == 5)
-    {
+        break;
+    
+        case 5:
         lodgingPerDay = 5000;
-    }
+        break;
 
-    else
-    {
+   default:
         cout << "INVALID INPUT" << endl;
 
-        return 1;
+        break;
     }
 
     int lodgingCost = lodgingPerDay * days_for_course;

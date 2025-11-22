@@ -4,10 +4,36 @@ using namespace std;
 
 int main()
 {
-int i = 1;
-int j = ++i;
- i = ++j;
- cout<<"The value of j is : "<< j <<endl;
-cout<<"The value of i is : "<< i <<endl;
-    
+srand(time(0));
+
+int T=rand() % 10;
+int M=rand() % 10;
+
+if(T<M){
+  int temp = T;
+     T= M;
+     M = temp;
+ 
+
+}
+for(int i =0;i<5 ;i++){
+int inputanswer;
+int realanswer = T - M;
+cout<<"What is "<<T<<"-"<<M<<endl;
+cin>>inputanswer;
+
+if(inputanswer == realanswer){
+    cout<<"You are correct"<<endl;
+    break;
+
+}
+
+else{
+    cout<<"You are wrong"<<endl;
+}
+
+}
+
+
+
 }
