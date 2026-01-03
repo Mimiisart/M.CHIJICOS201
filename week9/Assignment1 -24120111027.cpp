@@ -100,7 +100,7 @@ int main()
         scholarshippercent = 30;
     }
 
-    else if (jambscore >= 320)
+    else if (jambscore >= 280)
     {
         scholarshippercent = 20;
     }
@@ -124,6 +124,7 @@ int main()
     {
         hostel = "Not applicable";
         hostelfee = 0;
+        scholarshippercent =0;
     }
 
     

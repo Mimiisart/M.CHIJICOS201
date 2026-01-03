@@ -17,12 +17,11 @@ using namespace std;
         cout<<list[i]<<endl;
     }
 
-
+  }
 
 int main(){
     int arr[50];
-int size = sizeof(arr)/
-sizeof (arr [0]);
+int size = sizeof(arr)/ sizeof (arr [0]);
 int size;
 cout<<"enter the size of the array ニニニニニ>";
 cin>> size;
@@ -40,4 +39,4 @@ nPrintArray(arr,size);
 
 
 }
-}
+
